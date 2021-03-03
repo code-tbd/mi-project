@@ -1,0 +1,183 @@
+.top-bar-wrapper {
+    /* height: 40px; */
+    line-height: 40px;
+    background-color: #333;
+    font-size: 12px;
+}
+
+
+.top-bar {
+    position: relative;
+    height: 40px;
+}
+
+.top-bar a {
+    display: block;
+}
+
+
+/* 设置导航样式 */
+
+
+.top-bar li {
+    float: left;
+    color: #b0b0b0;
+}
+
+.right-top-bar,
+.middle-top-bar {
+    float: right;
+}
+
+.right-top-bar {
+    margin-left: 25px;
+}
+
+
+/* 设置导航分割线样式 */
+.top-bar .line {
+    margin: 0 7.3px;
+    color: #424242;
+}
+
+.top-bar ul:not(.right-top-bar) a:hover {
+    color: #fff;
+}
+
+
+
+/* 设置购物车块样式 */
+.right-top-bar li {
+    text-align: center;
+    width: 120px;
+    background-color: #424242;
+}
+
+
+.right-top-bar li:hover {
+    background-color: #fff;
+    color: #ee702e;
+}
+
+.right-top-bar li:hover .shop-box {
+    display: block;
+    height: 100px;
+}
+
+
+.shop-box {
+    background-color: black;
+    width: 320px;
+    height: 0px;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    overflow: hidden;
+    transition: height 0.3s;
+    /* display: none; */
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(10,10,10, .3); */
+    box-shadow: 0px 0px 10px rgba(10, 10, 10, .1),
+        0px 0px 10px rgba(10, 10, 10, .1), 0px 0px 10px rgba(10, 10, 10, .1);
+    z-index: -1;
+}
+
+.shop-box span {
+    color: #424242;
+    line-height: 100px;
+}
+
+.download {
+    position: relative;
+}
+
+.download-box {
+    width: 110px;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(10, 10, 10, .3);
+    position: absolute;
+    left: -27px;
+    /* display: none; */
+    transition: height 0.3s;
+    text-align: center;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    left: 16px;
+    top: 24px;
+    display: none;
+}
+
+.download:hover .download-box {
+    height: 140px;
+}
+
+
+.download:hover .triangle {
+    display: block;
+}
+
+.download-box img {
+    width: 82px;
+    height: 82px;
+    /* position: absolute;
+    margin: auto;
+    left: 14px;
+    top: 12px; */
+    margin-top: 10px;
+}
+
+.download-box span {
+    color: #333;
+    margin-top: -12px;
+    display: block;
+    /* position: absolute;
+    top: 96px;
+    left: 14px; */
+}
+
+
+
+
+/* 
+
+    top-nav-wrapper
+
+*/
+
+.top-nav-wrapper {
+    background-color: gray;
+}
+
+.top-nav-logo {
+    margin: 21px 0;
+    height: 55px;
+    width: 55px;
+    background-color: #ee702e;
+    float: left;
+}
+
+.top-nav{
+    margin-top: 21px;
+    margin-left: 188px;
+    width: 592px;
+    background-color: #bfa;
+    height: 30px;
+    float: left;
+}
+
+.top-nav-search{
+    margin-top: 21px;
+    float: right;
+    background-color: #bfa;
+    width: 295px;
+    height: 50px;
+}
