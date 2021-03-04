@@ -238,6 +238,7 @@
 .top-nav-search input {
     border: 0 ;
     float: left;
+    color: rgb(117, 117, 117);
     -webkit-appearance: none;
     -moz-appearance: none;
     line-height: 48px;
