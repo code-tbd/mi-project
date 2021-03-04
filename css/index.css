@@ -181,8 +181,7 @@
     height: 100%;
     display: block;
     float: right;
-    transition-delay: 3s;
-    transition: width 3s;
+    transition: width .3s;
     
 }
 
@@ -205,7 +204,7 @@
     height: 55px;
     position: relative;
     left: -55px;
-    transition: 3s;
+    transition: .3s;
 
 }
 
