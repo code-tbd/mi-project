@@ -401,3 +401,6 @@
     color: rgb(255, 103, 0);
 }
 
+.top-nav-box .list .first::before{
+    display: none;
+}
