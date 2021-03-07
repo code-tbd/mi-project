@@ -1,3 +1,8 @@
+body {
+    height: 3000px;
+}
+
+
 .top-bar-wrapper {
     /* height: 40px; */
     line-height: 40px;
@@ -436,16 +441,16 @@
     line-height: 42px;
 }
 
-.left-list li:hover {
+.left-list .group:hover {
     background-color: #ff6700;
 }
 
-.left-list li:not(:first-child):hover~.left-list-box,
+.left-list .group:hover>.left-list-box,
 .left-list-box:hover {
     display: block;
 }
 
-.left-list li:first-child:hover~.true-left-list-box,
+.left-list .group:first-child:hover>.true-left-list-box,
 .true-left-list-box:hover {
     display: block;
 }
@@ -544,14 +549,54 @@
 
 
 .fixed-list {
-    width: 30px;
-    height: 300px;
-    background-color: #bfa;
+    width: 25px;
+    height: 120px;
+    background-color: rgb(228, 228, 228);
     position: fixed;
-    right: 20px;
+    right: 50%;
+    margin-right: -640px;
+    /* left margin-left padding-left width padding-right margin-right right */
+    /* auto + 0 + 0 + 25 + 0 + 0 + right = view-width */
+    bottom: 96px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: transparent solid 1px;
 }
 
 
+
+.slide-left,
+.slide-right {
+    background: url("../img/icon-slides.png");
+    display: block;
+    width: 41px;
+    height: 69px;
+    /* background-color: #bfa; */
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.slide-left {
+    left: 233px;
+    top: 197.5px;
+    background-position: -84px 0;
+}
+
+.slide-right {
+    right: 0;
+    top: 197.5px;
+    background-position: -125px 0;
+}
+
+.slide-left:hover {
+    background-position: 0 0;
+}
+
+.slide-right:hover {
+    background-position: -42px 0;
+}
 
 /* =================================================================================================================================================== */
 /* =================================================================================================================================================== */
@@ -596,7 +641,7 @@
     height: 84px;
     background-color: white;
     width: 100%;
-    
+
 }
 
 .column {
@@ -661,5 +706,5 @@
     position: absolute;
     left: 9px;
     top: 5px;
-    
+
 } */
