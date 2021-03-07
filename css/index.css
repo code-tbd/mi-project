@@ -1,5 +1,6 @@
 body {
     height: 3000px;
+    /* overflow: hidden; */
 }
 
 
@@ -678,33 +679,64 @@ body {
 }
 
 
-
-
-
-
-
-/* 会写，懒得改样式了 */
-
-/* 
 .column::before {
     content: '';
     display: block;
-    height: 66px;
-    width: 1px;
-    background-color: #69625b;
     position: absolute;
-    left: 3px;
-    top: 7.5px;
+    width: 1px;
+    height: 58px;
+    background-color: rgb(121, 121, 121);
+    left: 77px;
+    top: 14px;
 }
 
 .column::after {
+    position: absolute;
     content: '';
     display: block;
+    width: 58px;
     height: 1px;
-    width: 66px;
-    background-color: #69625b;
-    position: absolute;
+    background-color: rgb(121, 121, 121);
     left: 9px;
-    top: 5px;
+    top: 0px;
+}
 
-} */
+.footer-first-box .row .column:last-child::before {
+    display: none;
+}
+
+.footer-first-box .row:first-child .column::after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+footer .sup {
+    background: url("../img/gift.png");
+    display: block;
+    /* float: left; */
+    width: 414px;
+    height: 280px;
+    margin: 3000px auto 0;
+    /* background-color: #bfa; */
+    
+}
+
+footer .sup:hover {
+    background: url("../img/xiaxia.png");
+    background-size: cover;
+    width: 414px;
+    height: 280px;
+    transition: all .5s;
+}
+
+footer .sup:hover::before {
+    content: "爱你～星星❤️";
+    margin-left: 164px;
+}
